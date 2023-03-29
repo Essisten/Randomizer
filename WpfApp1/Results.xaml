@@ -1,0 +1,22 @@
+﻿<Window x:Class="RandomizerApp.Results"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomizerApp"
+        mc:Ignorable="d"
+        Title="Results" Height="450" Width="600" Icon="resultsIcon.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="resultsTextbox" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="auto" TextWrapping="Wrap" VerticalAlignment="Center" Width="auto" FontFamily="Franklin Gothic Medium" IsReadOnly="True" IsUndoEnabled="True" VerticalScrollBarVisibility="Auto"/>
+        <Button Name="okButton" Grid.Row="1" Content="Ok" Width="60" Height="auto" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0, 0, 10, 0" Click="okButton_Click" FontFamily="Consolas"/>
+        <Button Name="copyButton" Grid.Row="1" Grid.Column="1" Content="Copy to clipboard" Width="160" Height="auto" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 0, 0, 0" Click="copyButton_Click" FontFamily="Consolas"/>
+    </Grid>
+</Window>
